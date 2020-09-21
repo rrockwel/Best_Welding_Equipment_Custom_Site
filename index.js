@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname,"public")));
 app.use(routes);
 
 // Declare port
-let PORT = 3000;
+let PORT = process.env.PORT || 3000;
 
 
 // Start server on port 
