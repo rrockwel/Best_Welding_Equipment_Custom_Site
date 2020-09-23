@@ -9,7 +9,7 @@
 	<link rel='stylesheet' href='./css/styles.css'>
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<title>TIG Welders</title>
+	<title>Contact</title>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id='mainNav'>
@@ -55,6 +55,40 @@
 		<video autoplay muted loop id='backgroundVideo'>
 			<source src='./images/Home/Video by cottonbro from Pexels.mp4'>
 		</video>
+
+
+		<div class="mig-container text-center">
+			<div class="row justify-content-center mt-5 mb-5">
+				<div class='col-10 col-md-8 col-lg-6 mb-5'>
+					<div class="card p-4">
+						<h2>Contact Us</h2>
+						<p>Please, leave us any feedback you might have so we can do better.</p>
+						<hr class='mt-0'>
+						<p>Do you disagree with some of our rankings?</p>
+						<p>Did we miss something in one of our rankings about a product?</p>
+						<form method='POST' onSubmit='/contact' id="contact-form">
+							<div class="form-group text-center m-5">
+								<h5><label for="firstName">First Name</label></h5>
+								<input type="text" class='form-control' id='firstName' name="firstName">
+							</div>
+							<div class="form-group text-center m-5">
+								<h5><label for="lastName">Last Name (optional)</label></h5>
+								<input type="text" class='form-control' id='lastName' name="lastName">
+							</div>
+							<div class="form-group text-center m-5">
+								<h5><label for="email">Email (optional)</label></h5>
+								<input type="email" class='form-control' id='email' name="email">
+							</div>
+							<div class="form-group text-center m-5">
+								<h5><label for="message">Please leave us your feedback...</label></h5>
+								<textarea type='text' class='form-control' id='message' name="message"></textarea>
+							</div>
+							<button class="btn btn-primary btn-success">Send Feedback</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 
