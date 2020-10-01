@@ -6,40 +6,47 @@ const OAuth2 = google.auth.OAuth2;
 
 // Render Home Page
 router.get('/', (req,res, next)=>{
-	res.render('index')
-})
+	res.render('index');
+});
 
 router.get('/helmets', (req,res,next)=>{
-	res.render('helmets')
-})
+	res.render('helmets');
+});
 
 router.get('/gloves', (req,res,next)=>{
-	res.render('gloves')
-})
+	res.render('gloves');
+});
 
 router.get('/Tools-and-Parts', (req,res,next)=>{
-	res.render('tools-and-parts')
-})
+	res.render('tools-and-parts');
+});
 
 router.get('/MIG-welders', (req,res,next)=>{
-	res.render('mig')
-})
+	res.render('mig');
+});
 
 router.get('/TIG-welders', (req,res,next)=>{
-	res.render('tig')
-})
+	res.render('tig');
+});
 
 router.get('/Multi-welders', (req,res,next)=>{
-	res.render('multi')
-})
+	res.render('multi');
+});
 
 router.get('/about', (req,res,next)=>{
-	res.render('about')
-})
+	res.render('about');
+});
 
 router.get('/contact', (req,res,next)=>{
-	res.render('contact')
-})
+	res.render('contact');
+});
+
+router.get('/legal', (req,res,next)=>{
+	res.render('privacy_disclosure_methods');
+});
+
+
+
 
 
 
@@ -58,41 +65,41 @@ oauth2Client.setCredentials({
 const accessToken = oauth2Client.getAccessToken();
 
 router.post('/contact', (req,res,next)=>{
-	console.log('hello');
-	// console.log(req.body)
-	// // Setup SMTP Server
-	// const smtpTrans = nodemailer.createTransport({
-	// 	host: 'smtp.gmail.com',
-	// 	port: 465,
-	// 	secure: true,
-	// 	auth:{
-	// 		type: 'OAuth2',
-	// 		user: 'bestweldingequipment@gmail.com',
-	// 		clientId: '884457304699-jvel3u2q0p2t3gl0tmsps0apnjddreg8.apps.googleusercontent.com',
-	// 		clientSecret: 'k8mkRZCgtdkw1ipgSxniVkyo',
-	// 		refreshToken: '1//04a9PGO_yvLQ6CgYIARAAGAQSNwF-L9Ir1U6UrIEsEOfsGo_yl6t5vbp0uFNtm4PotgbCFCVO4UKwvIQRkXasJEql-w9s4vzO_qY',
-	// 		accessToken: accessToken
-	// 	}
-	// })
+	console.log(req.body)
+	// Setup SMTP Server
+	const smtpTrans = nodemailer.createTransport({
+		host: 'smtp.gmail.com',
+		port: 465,
+		secure: true,
+		auth:{
+			type: 'OAuth2',
+			user: 'bestweldingequipment@gmail.com',
+			clientId: '884457304699-jvel3u2q0p2t3gl0tmsps0apnjddreg8.apps.googleusercontent.com',
+			clientSecret: 'k8mkRZCgtdkw1ipgSxniVkyo',
+			refreshToken: '1//04a9PGO_yvLQ6CgYIARAAGAQSNwF-L9Ir1U6UrIEsEOfsGo_yl6t5vbp0uFNtm4PotgbCFCVO4UKwvIQRkXasJEql-w9s4vzO_qY',
+			accessToken: accessToken
+		},
+		logger: true,
+		debug: true
+	})
 
-	// // Email Structure
-	// const mailOpts = {
-	// 	from: '${req.body.email}',
-	// 	to: 'bestweldingequipment@gmail.com',
-	// 	subject: 'New User Message from Best Welding Equipment',
-	// 	text: '${req.body.firstName} ${req.body.lastName} (${req.body.email}): ${req.body.message}'
-	// }
+	// Email Structure
+	const mailOpts = {
+		from: `${req.body.email}`,
+		to: 'bestweldingequipment@gmail.com',
+		subject: 'New User Message from Best Welding Equipment',
+		text: `${req.body.firstName} ${req.body.lastName} (${req.body.email}) says: ${req.body.message}`
+	}
 
-	// // Attempt to Send Email
-	// smtpTrans.sendMail(mailOpts, (err, res)=>{
-	// 	if(err){
-	// 		res.render('contact')
-	// 		console.log(err);
-	// 	}else{
-	// 		res.render('contact')
-	// 		console.log(res);
-	// 	}
-	// })
+	// Attempt to Send Email
+	smtpTrans.sendMail(mailOpts, (error, response)=>{
+		if(response){
+			console.log("response: " + res);
+			res.render('contact-success')
+		}else{
+			console.log("error: " + error);
+		}
+	})
 })
 
 

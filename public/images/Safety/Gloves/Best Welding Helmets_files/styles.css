@@ -27,10 +27,8 @@ a:hover{
 	text-decoration:none;
 }
 
-
 #mainNav{
   z-index:999;
-  border-bottom:1px solid black;
 }
 
 #backgroundVideo{
@@ -102,13 +100,10 @@ footer{
 	background:grey;
 	bottom:0;
 	padding-top:6px;
-	border-top:1px solid black;
 }
 
 footer a{
-	text-decoration:none;
-	color: white;
-	font-size:inherit;
+	text-decoration:underline;
 }
 
 footer a:hover{
@@ -254,44 +249,6 @@ footer a:hover{
 .card-img-top{
 	max-width:20vw;
 }
-
-.navbar-brand{
-	border:1px solid black;
-	background-color:fireBrick;
-	padding-left:10px;
-	padding-right:15px;
-	border-radius:15px;
-}
-
-.custom-toggler.navbar-toggler{
-	background-color:fireBrick;
-	border: 1px solid black;
-}
-
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.navbar-dark.navbar-nav.nav-link{
-	color:rgb(255,255,255,1);
-}
-
-.privacy{
-	color:black;
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight: 100;
-	font-size:18px;
-}
-
-.privacy h1{
-	text-shadow: 3px 3px 3px black;
-}
-
-.privacy li{
-	list-style-type: none;
-}
-
 
 
 
