@@ -305,6 +305,14 @@ footer a:hover{
 	border-radius:25px;
 }
 
+.coming-soon{
+	filter:blur(2.0px);
+}
+
+.nav-link{
+	font-size:21.2px;
+}
+
 
 
 
