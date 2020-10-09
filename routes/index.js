@@ -3,6 +3,8 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
+const path = require('path');
+
 
 // Render Home Page
 router.get('/', (req,res, next)=>{
@@ -43,6 +45,10 @@ router.get('/contact', (req,res,next)=>{
 
 router.get('/legal', (req,res,next)=>{
 	res.render('privacy_disclosure_methods');
+});
+
+router.get('/sitemap.xml', (req,res,next)=>{
+	res.sendFile(path.join(__dirname, "../public", "sitemap.xml"));
 });
 
 
