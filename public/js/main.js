@@ -31,11 +31,11 @@
 // 	}
 // }
 
-console.log('hello');
-document.addEventListener('mouseout', function(e){
-	if(!e.toElement && !e.relatedTarget){
-		e.preventDefault();
-		e.returnValue='';
-		alert('where are you going?')
-	}
-})
+// console.log('hello');
+// document.addEventListener('mouseout', function(e){
+// 	if(!e.toElement && !e.relatedTarget){
+// 		e.preventDefault();
+// 		e.returnValue='';
+// 		alert('where are you going?')
+// 	}
+// })
