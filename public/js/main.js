@@ -4,38 +4,10 @@
 // const menuNav = document.querySelector('.menu-nav');
 // const navItems = document.querySelectorAll('.menu-nav-item');
 
-// let showMenu = false;
 
-// menuBtn.addEventListener('click', toggleMenu);
-
-// function toggleMenu(){
-// 	if(!showMenu){
-// 		hamburger.classList.add('open');
-// 		nav.classList.add('open');
-// 		menuNav.classList.add('open');
-// 		navItems.forEach((item)=>{
-// 			item.classList.add('open');
-// 		})
-
-		
-// 		showMenu = true;
-// 	}else{
-// 		hamburger.classList.remove('open');
-// 		nav.classList.remove('open');
-// 		menuNav.classList.remove('open');
-// 		navItems.forEach((item)=>{
-// 			item.classList.remove('open');
-// 		})
-
-// 		showMenu = false;
-// 	}
-// }
-
-// console.log('hello');
-// document.addEventListener('mouseout', function(e){
-// 	if(!e.toElement && !e.relatedTarget){
-// 		e.preventDefault();
-// 		e.returnValue='';
-// 		alert('where are you going?')
-// 	}
-// })
+console.log('hello');
+document.addEventListener('mouseout', function(e){
+	if(!e.toElement && !e.relatedTarget){
+		console.log('where are you going?')
+	}
+})

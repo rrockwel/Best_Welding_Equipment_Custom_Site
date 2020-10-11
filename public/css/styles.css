@@ -53,8 +53,8 @@ a:hover{
 
 .content{
 	position: fixed;
+	padding-bottom:30px;
 	text-align:center;
-	padding:30px;
 	width:100%;
 	height:100vh;
 	text-shadow: -4px -4px 4px black;
@@ -62,7 +62,7 @@ a:hover{
 }
 
 .content::-webkit-scrollbar{
-	display:none;
+	display: none;
 }
 
 .links-list-item{
@@ -136,7 +136,7 @@ footer a{
 
 
 .mig-container::-webkit-scrollbar{
-	display:none;
+	display: none;
 }
 
 .mig-container .card{
