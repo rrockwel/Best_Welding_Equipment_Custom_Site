@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 // Set up mongoose for use with exit survey
 // MongoDB Config Information
-const db = require('../config/keys').MongoURI;
+const db = process.env.MONGODB_URL;
 // Schema
 const User = require('../config/schema');
 console.log("User Schema: " + User)
