@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 // Set up mongoose for use with exit survey
 // MongoDB Config Information
-const db = process.env.MONGODB_URL;
+const db = process.env.MONGODB_URL || "mongodb+srv://RichRock:Snowman1!@exitsurveycluster.brdk9.mongodb.net/exitSurveyDB?retryWrites=true&w=majority"
 // Schema
 const User = require('../config/schema');
 console.log("User Schema: " + User)

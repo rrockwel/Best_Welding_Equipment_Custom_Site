@@ -21,6 +21,12 @@ document.addEventListener('mouseout', function(e){
 
 
 
+$(document).click(function(e){
+	if(($('#home-overlay').css('display') == 'block') && ($('#home-overlay').is(e.target))){
+		$('#home-overlay').css('display', 'none');
+	}
+});
+
 
 $('#closeOverlay').on('click', ()=>{
 	document.getElementById('home-overlay').style.display = 'none';

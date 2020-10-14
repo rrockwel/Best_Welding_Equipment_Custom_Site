@@ -56,7 +56,8 @@ a:hover{
 	padding-bottom:30px;
 	left:0;
 	text-align:center;
-	width:100%;
+	width:90%;
+	margin-left:5%;
 	height:100vh;
 	text-shadow: -4px -4px 4px black;
 	overflow:scroll;
@@ -335,14 +336,61 @@ footer a{
 	font-size:26px;
 }
 
-#home-overlay label{
+#home-overlay h1{
+	text-shadow:3px 3px 3px black;
 }
+
+#home-overlay h4{
+	text-shadow:2px 2px 2px black;
+}
+
+#home-overlay label{
+	margin-left:30px;
+	width:93%;
+	text-shadow:2px 2px 2px black;
+}
+
+#home-overlay label:hover{
+	color:black;
+	text-shadow:3px 3px 3px white;
+}
+
+#home-overlay .card{
+	background:transparent;
+	color:white;
+}
+
+#home-overlay .form-check{
+	background:rgba(178,34,34,0.9);
+	border-radius:15px;
+	border:1px solid black;
+	box-shadow: 3px 3px 3px black;
+}
+
 
 #home-overlay input[type='checkbox']{
 	top:10px;
+	left:45px;
+}
+
+
+#home-overlay textarea{
+	border-radius:15px;
+}
+
+#home-overlay .btn{
+	font-size:24px;
+	color:white;
+	border:1px solid black;
+	background:rgba(178,34,34,0.9);
+	box-shadow:3px 3px 3px black;
 }
 
 .overlay-column{
+	background-image: linear-gradient(0deg,rgba(77,75,75,0.5),rgba(77,75,75,0.5)), url("../images/home/pexels-szoka-sebastian.jpg");
+	background-size:95vw;
+	border-radius:15px;
+	border:2px solid black;
 	position:absolute;
 	transition: ease-in-out;
 	top:50%;
@@ -350,7 +398,45 @@ footer a{
 	transform:translate(-50%,-50%);
 }
 
+.close.ml-auto{
+	width:40px;
+	height:40px;
+	position:fixed;
+	top:10px;
+	right:20px;
+	color:white;
+	background:black;
+	opacity:1;
+	border-radius:50px;
+	border:2px solid white;
+	z-index:999;
+}
 
+.close.ml-auto span{
+	position:relative;
+	top:50%;
+}
+
+.sidebar{
+	display:block;
+	width:80px;
+	position:fixed;
+	z-index:997;
+	top:30%;
+	right:0;
+	padding-top:10px;
+	padding-bottom: 10px;
+	background-color:#f8f9fa;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	box-shadow:3px 7px 3px black;
+}
+
+.social{
+	margin:10px;
+	height:60px;
+	width:60px;
+}
 
 
 
@@ -369,6 +455,10 @@ footer a{
 @media only screen and (min-width: 600px) {
 	#backgroundVideo{
 		bottom:-100px;
+	}
+
+	.whatsapp{
+		display:none;
 	}
 }
 
