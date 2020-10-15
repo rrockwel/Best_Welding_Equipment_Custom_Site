@@ -3,13 +3,16 @@ const path = require('path');
 const routes = require('./routes/index');
 const app = express();
 const bodyParser = require('body-parser');
-
+const compression = require('compression');
 
 
 
 // Set view engine as ejs
 app.set('view engine','ejs');
 app.set('views', path.join(__dirname,'views'));
+
+// Set Up Compression
+app.use(compression());
 
 // Set Up Body Parser
 app.use(bodyParser.urlencoded({ extended : true}))
