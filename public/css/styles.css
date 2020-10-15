@@ -419,7 +419,7 @@ footer a{
 
 .sidebar{
 	display:block;
-	width:80px;
+	width:60px;
 	position:fixed;
 	z-index:997;
 	top:30%;
@@ -434,9 +434,11 @@ footer a{
 
 .social{
 	margin:10px;
-	height:60px;
-	width:60px;
+	height:40px;
+	width:40px;
 }
+
+
 
 
 
@@ -474,6 +476,8 @@ footer a{
 	#backgroundVideo{
 		bottom:-800px;
 	}
+
+	
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
