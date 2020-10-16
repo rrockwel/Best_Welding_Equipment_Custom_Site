@@ -303,6 +303,7 @@ footer a{
 .custom-toggler.navbar-toggler{
 	background-color:fireBrick;
 	border: 1px solid black;
+	box-shadow:3px 3px 3px black;
 }
 
 
@@ -426,24 +427,6 @@ footer a{
 	transform:translate(-50%,-50%);
 }
 
-.close.ml-auto{
-	width:40px;
-	height:40px;
-	position:fixed;
-	top:10px;
-	right:20px;
-	color:white;
-	background:black;
-	opacity:1;
-	border-radius:50px;
-	border:2px solid white;
-	z-index:999;
-}
-
-.close.ml-auto span{
-	position:relative;
-	top:50%;
-}
 
 .sidebar{
 	display:block;
