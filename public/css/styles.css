@@ -105,15 +105,15 @@ a:hover{
 .home-container .card{
 	display:flex;
 	flex:1 1 auto;
-
-
-
-
 	font-weight:600;
 	font-size: 25px;
 	opacity:0.9;
 	box-shadow: 8px 8px 5px black;
 	text-shadow: 3px 3px 3px black;
+}
+
+.home-container .card :active{
+	transform:scale(1.05);
 }
 
 footer{
@@ -341,10 +341,12 @@ footer a{
 	font-size:21.2px;
 	color:purple;
 	text-shadow:4px 4px 2px black;
+
 }
 
 .nav-link:hover{
 	text-shadow: 6px 6px 2px black;
+	transform:scale(1.1);
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -451,18 +453,46 @@ footer a{
 
 .social:hover{
 	cursor:pointer;
+	transform:scale(1.1);
+}
+
+.feedback{
+	background-image: linear-gradient(0deg,rgba(77,75,75,0.5),rgba(77,75,75,0.5)), url("../images/Home/pexels-szoka-sebastian.jpg");
+	background-size:150vh;
+
 }
 
 .feedback.card-text{
 	text-shadow:2px 2px 2px black;
 }
 
-.feeback label{
+.feedback label{
 	text-shadow:2px 2px 2px black;
 }
 
 .feedback input, textarea, .btn-primary{
 	box-shadow:3px 3px 3px black;
+}
+
+.feedback button{
+	background-color:#a11616;
+	border: #a11616;
+	text-shadow: 2px 2px 2px black;
+	box-shadow: 4px 4px 3px black;
+}
+
+.feedback button:hover{
+	text-shadow:4px 4px 3px black;
+	background-color:#a11616;
+	transform:scale(1.1);
+}
+
+hr{
+	background-color:white;
+}
+
+.btn-primary:hover{
+	transform:scale(1.02);
 }
 
 

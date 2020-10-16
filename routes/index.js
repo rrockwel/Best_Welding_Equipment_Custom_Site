@@ -4,37 +4,37 @@ const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
 const path = require('path');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 // Set up mongoose for use with exit survey
 // MongoDB Config Information
-const db = process.env.MONGODB_URL || "mongodb+srv://RichRock:Snowman1!@exitsurveycluster.brdk9.mongodb.net/exitSurveyDB?retryWrites=true&w=majority"
+// const db = process.env.MONGODB_URL 
 // Schema
-const User = require('../config/schema');
-console.log("User Schema: " + User)
-// Connect to Mongoose
-mongoose.connect(db, {useNewUrlParser:true, useUnifiedTopology: true})
-	.then(()=>{console.log("mongodb connected")})
-	.catch((err)=>{console.log(err)});
+// const User = require('../config/schema');
+// console.log("User Schema: " + User)
+// // Connect to Mongoose
+// mongoose.connect(db, {useNewUrlParser:true, useUnifiedTopology: true})
+// 	.then(()=>{console.log("mongodb connected")})
+// 	.catch((err)=>{console.log(err)});
 
-// Submit Exit Survey
-router.post('/exitSurvey', (req, res, next)=>{
-	const { iDontLikeTheDesign, iAmNotInterestedInWeldingProducts, iNeedMoreInformation, couldNotFindSpecifItem, iHaveOtherFeedback } = req.body;
-	console.log( iDontLikeTheDesign, iAmNotInterestedInWeldingProducts )
-	console.log(req.body);
-	const newUser = new User({
-		iDontLikeTheDesign,
-		iAmNotInterestedInWeldingProducts,
-		iNeedMoreInformation,
-		couldNotFindSpecifItem,
-		iHaveOtherFeedback
-	})
-	console.log(newUser);
+// // Submit Exit Survey
+// router.post('/exitSurvey', (req, res, next)=>{
+// 	const { iDontLikeTheDesign, iAmNotInterestedInWeldingProducts, iNeedMoreInformation, couldNotFindSpecifItem, iHaveOtherFeedback } = req.body;
+// 	console.log( iDontLikeTheDesign, iAmNotInterestedInWeldingProducts )
+// 	console.log(req.body);
+// 	const newUser = new User({
+// 		iDontLikeTheDesign,
+// 		iAmNotInterestedInWeldingProducts,
+// 		iNeedMoreInformation,
+// 		couldNotFindSpecifItem,
+// 		iHaveOtherFeedback
+// 	})
+// 	console.log(newUser);
 
-	newUser.save()
+// 	newUser.save()
 
-	res.render('index')
-})
+// 	res.render('index')
+// })
 
 // Render Home Page
 router.get('/', (req,res, next)=>{
