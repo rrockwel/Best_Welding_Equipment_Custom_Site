@@ -144,16 +144,20 @@ footer a{
 .mig-container .card{
 	border-radius: 20px;
 	font-weight:800;
+	box-shadow: 8px 8px 5px black;
+
 }
 
 .mig-container .card-body{
 	background: white;
 	border-radius:25px;
+	box-shadow:5px 5px 5px black;
 }
 
 .mig-container .card-body .btn {
 	border-radius:25px;
-	text-shadow:1px 1px 1px black;
+	text-shadow:2px 2px 2px black;
+	box-shadow:4px 4px 4px black;
 }
 
 .mig-container h2{
@@ -275,6 +279,7 @@ footer a{
 	padding-left:10px;
 	padding-right:15px;
 	border-radius:15px;
+	box-shadow:3px 3px 3px black;
 }
 
 .custom-toggler.navbar-toggler{
@@ -316,6 +321,11 @@ footer a{
 .nav-link{
 	font-size:21.2px;
 	color:purple;
+	text-shadow:4px 4px 2px black;
+}
+
+.nav-link:hover{
+	text-shadow: 6px 6px 2px black;
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -429,7 +439,7 @@ footer a{
 	background-color:#f8f9fa;
 	border-top-left-radius:10px;
 	border-bottom-left-radius:10px;
-	box-shadow:3px 7px 3px black;
+	box-shadow:-3px 7px 3px black;
 }
 
 .social{
@@ -437,6 +447,23 @@ footer a{
 	height:40px;
 	width:40px;
 }
+
+.social:hover{
+	cursor:pointer;
+}
+
+.feedback.card-text{
+	text-shadow:2px 2px 2px black;
+}
+
+.feeback label{
+	text-shadow:2px 2px 2px black;
+}
+
+.feedback input, textarea, .btn-primary{
+	box-shadow:3px 3px 3px black;
+}
+
 
 
 

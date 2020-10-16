@@ -7,17 +7,30 @@
 
 $(document).ready(()=>{
 
+
+
 // Set Session Item firstVisit for once so you can control popup to only happen once
-sessionStorage.setItem('firstVisit', '1');
+
+		// EXIT INTENT POPUP //
+// sessionStorage.setItem('firstVisit', '1');
 
 
 console.log('hello');
-document.addEventListener('mouseout', function(e){
-	if((!e.toElement && !e.relatedTarget)&&(sessionStorage.getItem('firstVisit')==='1')){
-		document.getElementById("home-overlay").style.display = 'block';
-		sessionStorage.setItem('firstVisit', '2');
-	}
-})
+
+
+		// EXIT INTENT POPUP //
+// document.addEventListener('mouseout', function(e){
+// 	if((!e.toElement && !e.relatedTarget)&&(sessionStorage.getItem('firstVisit')==='1')){
+// 		setTimeout(function(){
+// 			document.getElementById("home-overlay").style.display = 'block';
+// 			sessionStorage.setItem('firstVisit', '2');
+// 		},1000)
+// 	}
+// })
+
+	
+
+
 
 
 
@@ -31,6 +44,7 @@ $(document).click(function(e){
 $('#closeOverlay').on('click', ()=>{
 	document.getElementById('home-overlay').style.display = 'none';
 })
+
 
 
 })
