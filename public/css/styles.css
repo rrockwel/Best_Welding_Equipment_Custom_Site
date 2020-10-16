@@ -93,10 +93,22 @@ a:hover{
 }
 
 .home-container{
-	margin-top: 50px;
+	margin-top: 20px;
+	margin-bottom:12vh;
+}
+
+.home-container img{
+	max-height:300px;
+	max-width:300px;
 }
 
 .home-container .card{
+	display:flex;
+	flex:1 1 auto;
+
+
+
+
 	font-weight:600;
 	font-size: 25px;
 	opacity:0.9;
@@ -180,6 +192,7 @@ footer a{
   height: 150px;
   overflow: hidden;
   position: absolute;
+  z-index:999;
 }
 
 .ribbon::before,
@@ -229,7 +242,7 @@ footer a{
 
 .ribbon-top-left span {
   right: -25px;
-  top: 30px;
+  top: 35px;
   transform: rotate(-45deg);
 }
 
@@ -279,7 +292,12 @@ footer a{
 	padding-left:10px;
 	padding-right:15px;
 	border-radius:15px;
+	text-shadow:2px 2px 2px black;
 	box-shadow:3px 3px 3px black;
+}
+
+.navbar-brand:hover{
+	text-shadow:4px 4px 2px black;
 }
 
 .custom-toggler.navbar-toggler{
@@ -478,6 +496,10 @@ footer a{
 	#backgroundVideo{
 		
 	}
+
+	.home-container .card{
+		width:75vw;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -489,6 +511,10 @@ footer a{
 	.whatsapp{
 		display:none;
 	}
+
+	.home-container .card{
+		width:80vw;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -496,6 +522,11 @@ footer a{
 	#backgroundVideo{
 		bottom:-400px;
 	}
+
+	.home-container .card{
+		width:30vw;
+	}
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -503,6 +534,7 @@ footer a{
 	#backgroundVideo{
 		bottom:-800px;
 	}
+	
 
 	
 }
@@ -513,6 +545,16 @@ footer a{
 		bottom:-1000px;
 		width:100%;
 	}
+
+	.home-container .card{
+		width:22vw;
+	}
+	.home-container img{
+		max-width:300px;
+		max-height:300px;
+	}
+
+	
 }
 
 @media only screen and (min-width: 1400px) {
@@ -520,12 +562,16 @@ footer a{
 		bottom:-1200px;
 		width:100%;
 	}
+
+
 }
 
 @media only screen and (min-width: 1600px) {
 	#backgroundVideo{
 		bottom:-1400px;
 	}
+	
+
 }
 
 
