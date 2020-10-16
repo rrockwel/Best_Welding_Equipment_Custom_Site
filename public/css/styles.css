@@ -183,7 +183,6 @@ footer a{
 }
 
 .card-img-top.welder-image{
-	min-width:300px;
 	max-width:60vw;
 }
 
@@ -512,6 +511,10 @@ hr{
 
 	.home-container .card{
 		width:75vw;
+	}
+
+	.welder-image{
+
 	}
 }
 
