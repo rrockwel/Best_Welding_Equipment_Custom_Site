@@ -112,9 +112,9 @@ a:hover{
 	text-shadow: 3px 3px 3px black;
 }
 
-.home-container .card :active{
+/*.home-container .card :active{
 	transform:scale(1.05);
-}
+}*/
 
 footer{
 	position:fixed;
@@ -596,3 +596,4 @@ hr{
 
 
 
+ 
