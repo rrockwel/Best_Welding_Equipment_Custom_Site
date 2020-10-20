@@ -343,10 +343,7 @@ footer a{
 
 }
 
-.nav-link:hover{
-	text-shadow: 6px 6px 2px black;
-	transform:scale(1.1);
-}
+
 
 .navbar-dark .navbar-nav .nav-link{
 	color:#fffafa;
@@ -546,6 +543,11 @@ hr{
 	.home-container .card{
 		width:30vw;
 	}
+
+	.nav-link:hover{
+	text-shadow: 6px 6px 2px black;
+	transform:scale(1.1);
+}
 
 }
 
