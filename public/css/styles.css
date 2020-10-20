@@ -544,10 +544,7 @@ hr{
 		width:30vw;
 	}
 
-	.nav-link:hover{
-	text-shadow: 6px 6px 2px black;
-	transform:scale(1.1);
-}
+
 
 }
 
@@ -555,6 +552,11 @@ hr{
 @media only screen and (min-width: 992px) {
 	#backgroundVideo{
 		bottom:-800px;
+	}
+
+	.nav-link:hover{
+		text-shadow: 6px 6px 2px black;
+		transform:scale(1.1);
 	}
 	
 
