@@ -2,7 +2,7 @@
 	box-sizing:border-box;
 	margin:0;
 	padding:0;
-	font-family: 'Alegreya', serif;
+	font-family: 'Commissioner', sans-serif;
 	background:transparent;
 }
 
@@ -94,7 +94,7 @@ a:hover{
 
 .home-container{
 	margin-top: 20px;
-	margin-bottom:26vh;
+	padding-bottom:10px;
 }
 
 .home-container img{
@@ -124,8 +124,10 @@ footer{
 	line-height:1;
 	background:grey;
 	bottom:0;
-	padding-top:6px;
+	padding-top:22px;
+	padding-bottom:15px;
 	border-top:1px solid black;
+	box-shadow: -3px -3px 3px black;
 }
 
 footer a{
@@ -146,8 +148,8 @@ footer a{
 	overflow:scroll;
 	overflow-x:hidden;
 	max-width:1500px;
+	padding-bottom:15px;
 }
-
 
 .mig-container::-webkit-scrollbar{
 	display: none;
@@ -276,8 +278,8 @@ footer a{
 }
 
 .card-text{
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight:300;
+	font-family: 'Commissioner', sans-serif;
+	font-weight:400;
 	font-size: 22px;
 }
 
@@ -543,6 +545,10 @@ hr{
 	.home-container .card{
 		width:30vw;
 	}
+
+/*	footer{
+		padding-bottom:0px;
+	}*/
 
 
 
