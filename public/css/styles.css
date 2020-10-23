@@ -94,7 +94,7 @@ a:hover{
 
 .home-container{
 	margin-top: 20px;
-	padding-bottom:10px;
+	padding-bottom:140px;
 }
 
 .home-container img{
@@ -493,6 +493,10 @@ hr{
 	transform:scale(1.02);
 }
 
+span.emphasis{
+	font-weight:900;
+}
+
 
 
 
@@ -525,10 +529,6 @@ hr{
 
 	.whatsapp{
 		display:none;
-	}
-
-	.home-container{
-		margin-bottom:12vh;
 	}
 
 	.home-container .card{

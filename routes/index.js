@@ -49,11 +49,7 @@ router.get('/gloves', (req,res,next)=>{
 	res.render('gloves');
 });
 
-router.get('/Tools-and-Parts', (req,res,next)=>{
-	res.render('tools-and-parts');
-});
-
-router.get('/MIG-welders', (req,res,next)=>{
+router.get('/mig', (req,res,next)=>{
 	res.render('mig');
 });
 
