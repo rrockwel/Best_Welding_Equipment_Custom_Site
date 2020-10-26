@@ -45,9 +45,7 @@ a:hover{
 #backgroundVideo{
 	z-index:-999;
 	position:fixed;
-	right: 0;
-	bottom: 0px;
-	max-width: 100%;
+	width: 100vw;
 	min-height: 100%;
 }
 
@@ -315,9 +313,8 @@ footer a{
 
 .privacy{
 	color:black;
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight: 100;
-	font-size:18px;
+	font-family: 'Commissioner', sans-serif;
+	font-size:20px;
 }
 
 .privacy h1{
@@ -517,7 +514,7 @@ span.emphasis{
 	}
 
 	.whatsapp{
-		margin:5px;
+		margin:px;
 	}
 }
 
