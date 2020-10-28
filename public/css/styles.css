@@ -107,7 +107,7 @@ a:hover{
 	font-size: 25px;
 	opacity:0.9;
 	box-shadow: 8px 8px 5px black;
-	text-shadow: 3px 3px 3px black;
+	text-shadow: 3px 3px 8px black;
 }
 
 /*.home-container .card :active{
@@ -168,12 +168,18 @@ footer a{
 
 .mig-container .card-body .btn {
 	border-radius:25px;
-	text-shadow:2px 2px 2px black;
+	font-size:22px;
+	text-shadow:2px 2px 7px black;
 	box-shadow:4px 4px 4px black;
 }
 
+.mig-container .card-body .btn a{
+	font-weight:600;
+}
+
 .mig-container h2{
-	text-shadow: 3px 3px 3px black;
+	font-weight:700;
+	text-shadow: 3px 3px 7px black;
 }
 
 .card-img-top{
@@ -342,8 +348,6 @@ footer a{
 
 }
 
-
-
 .navbar-dark .navbar-nav .nav-link{
 	color:#fffafa;
 }
@@ -424,7 +428,6 @@ footer a{
 	transform:translate(-50%,-50%);
 }
 
-
 .sidebar{
 	display:block;
 	width:60px;
@@ -494,8 +497,18 @@ span.emphasis{
 	font-weight:700;
 }
 
+.prosCons{
+	width:100%;
+}
 
+ul{
+	list-style-type: none;
+}
 
+.prosCons{
+	font-size:22px;
+	font-weight:500;
+}
 
 
 
