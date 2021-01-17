@@ -50,27 +50,28 @@ router.get('/welding-safety-equipment', (req,res,next)=>{
 
 // Routes for article pages
 
+
+// How To Learn To Weld
 router.get('/access-to-a-welder', (req,res,next)=>{
 	res.render('articles/How-to-Learn-to-Weld/access-to-a-welder');
 })
-
 router.get('/protective-equipment', (req,res,next)=>{
 	res.render('articles/How-to-Learn-to-Weld/protective-equipment');
 })
-
 router.get('/learning-materials', (req,res,next)=>{
 	res.render('articles/How-to-Learn-to-Weld/learning-materials');
 })
-
 router.get('/how-and-what-to-practice', (req,res,next)=>{
 	res.render('articles/How-to-Learn-to-Weld/how-and-what-to-practice');
 })
-
-
 router.get('/sitemap.xml', (req,res,next)=>{
 	res.sendFile(path.join(__dirname, "../public", "sitemap.xml"));
 });
 
+// Basics of MIG Welding
+router.get('/parts-of-mig-welder', (req,res,next)=>{
+	res.render('articles/Basics_of_MIG_Welding/parts_of_a_mig_welder.ejs')
+})
 
 
 
