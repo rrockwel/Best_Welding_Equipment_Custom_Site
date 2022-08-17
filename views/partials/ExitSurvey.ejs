@@ -1,0 +1,36 @@
+<div class='container'>
+	<div id="home-overlay" class="mb-5">
+		<div class="col-11 col-md-9 col-lg-7 col-xl-6 overlay-column">
+			<div class="card pt-2 pb-2">
+				<div class="text-center"><h1>Before You Go</h1>
+					<h4>Let us know how we could improve for you.</h4>
+				</div>
+				
+				<form action="/exitSurvey" method='POST'>
+					<div class="form-group mt-3">
+						<div class="form-check m-3">
+							<label for="iDontLikeTheDesign" class='form-check-label'>
+							<input type="checkbox" class='form-check-input' id='iDontLikeTheDesign' name='iDontLikeTheDesign'>Design</label>
+						</div>
+						<div class='form-check m-3'>
+							<label for="iAmNotInterestedInWeldingProducts" class="form-check-label"><input type="checkbox" class="form-check-input" id="iAmNotInterestedInWeldingProducts" name="iAmNotInterestedInWeldingProducts">I'm not interested in welding</label>
+						</div>
+						<div class='form-check m-3'>
+							<label for="iNeedMoreInformation" class="form-check-label"><input type="checkbox" class="form-check-input" id="iNeedMoreInformation" name="iNeedMoreInformation">More information about equipment that <i>is</i> listed.</label>
+						</div>
+						<div class='form-check m-3'>
+							<label for="couldNotFindSpecifItem" class="form-check-label"><input type="checkbox" class="form-check-input" id="couldNotFindSpecifItem" name="couldNotFindSpecifItem">More information about equipment that <i>isn't</i> listed.</label>
+						</div>
+						<div class='form-group m-3'>
+							<label for="iHaveOtherFeedback">Other:</label>
+							<textarea name="iHaveOtherFeedback" id="iHaveOtherFeedback" name="iHaveOtherFeedback" cols="8" rows="1" class="form-control"></textarea>
+						</div>
+					</div>
+					<div class="text-center mb-2">
+						<button type='submit' class='btn'>Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

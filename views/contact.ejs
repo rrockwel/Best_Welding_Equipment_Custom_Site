@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<%- include ('partials/Header') %>
+	<title>Contact</title>
+	<meta name='description' content="Please feel free to contact us at any time with questions, complaints, suggestion, or just to say hello. Best Welding Equipment would love to hear from you!">
+</head>
+<body>
+	<%- include ('partials/NavBar') %>
+	<%- include ('partials/Background') %>
+
+<div class="container">
+	<div class="mig-container text-center">
+		<div class="row justify-content-center mt-3 mb-5">
+			<%- include ('partials/Messages') %> 
+			<div class='col-10 col-md-8 col-lg-6 mb-5'>
+				<div class="card p-4 feedback text-white">
+					<h2>Contact Us</h2>
+					<p class='lead'>Please, leave us any feedback you might have so we can do better.</p>
+					<hr class='mt-0'>
+					<p class='card-text'>Did you notice something that we missed on one of our products?</p>
+					<p class='card-text'>Do you disagree with some of our rankings?</p>
+					<hr class="mt-0">
+					
+					<form method="POST" action='/contact' id="contact-form">
+						<div class="form-group text-center mt-2 mr-4 mb-4 ml-4">
+							<h5><label for="firstName">First Name</label></h5>
+							<input type="text" class='form-control' id='firstName' name="firstName">
+						</div>
+						<div class="form-group text-center m-3">
+							<h5><label for="lastName">Last Name (optional)</label></h5>
+							<input type="text" class='form-control' id='lastName' name="lastName">
+						</div>
+						<div class="form-group text-center m-3">
+							<h5><label for="email">Email (optional)</label></h5>
+							<input type="email" class='form-control' id='email' name="email">
+						</div>
+						<div class="form-group text-center m-3">
+							<h5><label for="message">Please leave us your feedback...</label></h5>
+							<textarea type='text' class='form-control' id='message' name="message"></textarea>
+						</div>
+						<button class='btn text-light'>Send Feedback</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+	<%- include ('partials/Footer') %>
+	
+</body>
+</html>
+
+
