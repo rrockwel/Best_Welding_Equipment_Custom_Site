@@ -1,4 +1,4 @@
-const express = require('express');
+ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
@@ -44,7 +44,7 @@ router.get('/legal', (req,res,next)=>{
 });
 
 router.get('/welding-safety-equipment', (req,res,next)=>{
-	res.render('welding-safety-equipment')
+	res.render('welding-safety-equipment');
 })
 
 
@@ -70,10 +70,10 @@ router.get('/sitemap.xml', (req,res,next)=>{
 
 // Basics of MIG Welding
 router.get('/parts-of-mig-welder', (req,res,next)=>{
-	res.render('articles/Basics_of_MIG_Welding/parts_of_a_mig_welder.ejs')
+	res.render('articles/Basics_of_MIG_Welding/parts_of_a_mig_welder.ejs');
 })
 router.get('/modes-of-transfer', (req,res,next)=>{
-	res.render('articles/Basics_of_MIG_Welding/transfer_modes.ejs')
+	res.render('articles/Basics_of_MIG_Welding/transfer_modes.ejs');
 })
 
 
